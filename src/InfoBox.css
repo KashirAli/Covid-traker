@@ -1,0 +1,30 @@
+.infobox__cases{
+    color:red;
+    margin-top:-5px;
+    letter-spacing: 0.02em;
+}
+.infobox__total{
+    margin-top: 10px;
+    color:#727375;
+}
+.active-success{
+    box-sizing:border-box;
+    border-left:10px solid green;
+}
+.active-danger{
+    border-left:10px solid red;
+}
+@media( max-width:990px){
+    .infobox__title{
+        
+        font-size:11px;
+    }
+    .infobox__total{
+        font-size:0.7em
+    }
+    .infobox__content{
+        border:1x solid black;
+        padding:0px 10px 10px 5px;
+        margin:0px;
+    }
+}

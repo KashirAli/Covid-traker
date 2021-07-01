@@ -1,0 +1,32 @@
+.map{
+    position:relative;
+    background: white;
+    margin:20px 0 20px 0;
+    width: 95%;
+    height:400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.info__img{
+    width:95%;
+    margin:0 auto
+}
+.info__img img{
+    width: 100%;
+}
+.info__country{
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding:5px 5px;
+}
+.info__cases,
+.info__recovered,
+.info__deaths{
+    padding:5px;
+}
+@media (max-width:990px){
+    .map{
+        width: 100%;
+
+    }
+}

@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background:#f4f5fa;
 }
+body::-webkit-scrollbar {
+  width: 0.6em;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  height:0.9em;
 }
+ 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+ 
+body::-webkit-scrollbar-thumb {  
+  border-radius: 5px;
+  background-color: rgb(199, 193, 193);
+  
+}
+.app{
+ 
+  width: 90%;
+  margin:0 auto;
+ display:grid;
+ grid-template-columns: 70% 30%;
+ justify-content: space-between;
+ /* align-items: center; */
+padding:20px;
+}
+.app__header{
+
+  display:grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
+}
+.app__header > *:first-child{
+  color:red;
+  font-weight: bolder;
+}
+.app__header>*:last-child{
+margin-right: 20px;
+}
+.app__stats{
+  width: 90%;
+  display:grid;
+  grid-template-columns: 33.3% 33.3% 33.3% ;
+  justify-content: space-evenly;
+
 }
 
-.App-link {
-  color: #61dafb;
+.app__stats > *:not(:last-child) {
+  margin-right: 15px;
 }
+.app__right{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  padding-top:50px;
+}
+@media (max-width:990px){
+  .app{
+   
+    width: 100%;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  .app__header{
+    justify-content: space-between;
+  }
+  .app__header>*:last-child{
+    margin-right: 0px;
+    }
+  .app__stats{
+    width: 100%;
+    justify-content: space-evenly;
+    grid-gap:20px;
+  }
+  .app__right{
+    padding-top:0px;
+  }
+  .app__stats > *:not(:last-child) {
+    margin-right: 5px;
   }
 }
